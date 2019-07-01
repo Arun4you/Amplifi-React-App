@@ -1,0 +1,12 @@
+{
+    "AppSyncApiName": "amplifyreact",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito01bbd612",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplyfi-react-20190220205147-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/37724a429321325912f2d567ec6da38e37f2c9cb"
+}

@@ -1,0 +1,12 @@
+{
+    "AppSyncApiName": "photoalbums",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitobc6efbc7",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "photo-albums-20190221194053-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/e4ff9af816a7abb2a70a5b406ef6d660fd83f3a7"
+}

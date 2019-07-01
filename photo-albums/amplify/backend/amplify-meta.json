@@ -1,0 +1,56 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "photo-albums-20190221194053-authRole",
+            "UnauthRoleArn": "arn:aws:iam::185882515393:role/photo-albums-20190221194053-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::185882515393:role/photo-albums-20190221194053-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "photo-albums-20190221194053-deployment",
+            "UnauthRoleName": "photo-albums-20190221194053-unauthRole",
+            "StackName": "photo-albums-20190221194053",
+            "StackId": "arn:aws:cloudformation:ap-south-1:185882515393:stack/photo-albums-20190221194053/807eb7a0-35e2-11e9-a8af-0aafc10b0582"
+        }
+    },
+    "auth": {
+        "cognitobc6efbc7": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/photo-albums-20190221194053-deployment/amplify-cfn-templates/auth/cognitobc6efbc7-cloudformation-template.yml",
+                "logicalId": "authcognitobc6efbc7"
+            },
+            "lastPushTimeStamp": "2019-02-21T14:50:13.636Z",
+            "output": {
+                "AppClientSecret": "81eih8s1tfto3l2gg6frkcn3oo2cflur6h76o49eo1lotgcov09",
+                "UserPoolId": "ap-south-1_9rTl1kvUX",
+                "AppClientIDWeb": "2t92kjhc044pouvo143kkp2jl0",
+                "AppClientID": "4rsmb3afdv3goqg0tpsgppqh1m",
+                "IdentityPoolId": "ap-south-1:4d5a0c99-78b4-4dd5-a004-e7bd35a6d275",
+                "IdentityPoolName": "cognitobc6efbc7_identitypool_bc6efbc7__dev",
+                "UserPoolName": "cognitobc6efbc7_userpool_bc6efbc7"
+            },
+            "lastPushDirHash": "rymL7oqWQDMfISo/msoql4XKxK8="
+        }
+    },
+    "api": {
+        "photoalbums": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "securityType": "AMAZON_COGNITO_USER_POOLS",
+                "GraphQLAPIIdOutput": "zfndeedtlncjdi5wspswckfw7m",
+                "GraphQLAPIEndpointOutput": "https://6as54jldhzgpplsjrrpe7vzpgi.appsync-api.ap-south-1.amazonaws.com/graphql",
+                "GraphQLAPIKeyOutput": "da2-xmvdcnlzfvc6bk2rdbnftpz3ny",
+                "AuthCognitoUserPoolIdOutput": "ap-south-1_9rTl1kvUX",
+                "AuthCognitoUserPoolNativeClientId": "See UserPool: ap-south-1_9rTl1kvUX",
+                "AuthCognitoUserPoolJSClientId": "See UserPool: ap-south-1_9rTl1kvUX"
+            },
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/photo-albums-20190221194053-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+                "logicalId": "apiphotoalbums"
+            },
+            "lastPushTimeStamp": "2019-02-21T14:50:13.843Z",
+            "lastPushDirHash": "oK2GUuh/3VrhV+6yvM3aP/M/wzc="
+        }
+    }
+}
